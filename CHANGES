@@ -3,6 +3,9 @@ Revision history for Perl extension Zabbix7-API
 
 {{$NEXT}}
 
+1.3 2026-02-24T20:55:13Z
+ Added Event
+
 1.2 2026-02-23T17:00:15Z
  Added Problems
 

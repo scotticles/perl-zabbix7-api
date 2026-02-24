@@ -159,7 +159,7 @@ Zabbix7::API::Event -- Zabbix event objects (problems & OK events)
           scalar localtime $event->data->{clock},
           $event->name,
           $event->data->{severity} // '?',
-          $event->data->{hosts}[0]{host} // '—';
+          $event->data->{hosts}[0]{host} // '-';
   }
 
   # Single event
@@ -174,8 +174,7 @@ This is a subclass of C<Zabbix7::API::CRUDE>.
 =head1 SEE ALSO
 
 L<Zabbix7::API::CRUDE>,
-L<Zabbix7::API::Trigger>,
-Zabbix API documentation → event.get / event object
+Zabbix API documentation - event.get / event object
 
 =head1 AUTHOR
 
@@ -183,6 +182,11 @@ SCOTTH
 
 =head1 COPYRIGHT AND LICENSE
 
-Same as original Trigger module (GPLv3).
+=head1 COPYRIGHT AND LICENSE
+
+Copyright (C) 2025 ScottH
+
+This library is free software; you can redistribute it and/or modify it under
+the terms of the GPLv3.
 
 =cut
